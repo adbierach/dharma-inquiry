@@ -5,7 +5,9 @@
             <div class="flex items-center justify-between h-16">
               <div class="flex items-center">
                 <div class="flex-shrink-0">
-                  <img class="h-8 w-8" src="./assets/dharma-logo.png" alt="Workflow">
+                  <router-link to="/">
+                      <img class="h-8 w-8" src="./assets/dharma-logo.png" alt="Dharma Inquiry">
+                  </router-link>
                 </div>
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline space-x-4">

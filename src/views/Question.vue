@@ -3,8 +3,8 @@
     <!-- Replace with your content -->
     <div class="px-4 py-6 sm:px-0">
       <div class="border-2 border-gray-200 rounded-xl
-        py-12 text-center max-w-lg mx-auto shadow-md">
-        <h3 class="text-3xl font-bold">
+        py-12 px-4 text-center max-w-lg mx-auto shadow-md">
+        <h3 class="text-2xl md:text-3xl font-bold">
             {{ currentQuestion }}
         </h3>
         <button @click="newQuestion" class="px-4 py-4 mt-8 rounded-md bg-green-200 hover:bg-green-300">New Question</button>
