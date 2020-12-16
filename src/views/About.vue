@@ -39,7 +39,7 @@
                   <li class="mt-2 text-base text-gray-500">Ask it! 🧐</li>
                   <li class="mt-2 text-base text-gray-500">For any question, you can keep asking "Why?" until you get to something fundamental or until you lose interest. 😀</li>
                 </ul>
-                <p class="mt-4 text-lg leading-6 font-medium text-gray-900">Use it:</p>
+                <p class="mt-4 text-lg leading-6 font-medium text-gray-900">Play it:</p>
                 <ul class="px-8 list-disc">
                     <li class="mt-2 text-base text-gray-500">With friends!</li>
                     <li class="mt-2 text-base text-gray-500">With family!</li>
