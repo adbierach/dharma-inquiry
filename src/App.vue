@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="bg-gray-800">
+        <nav class="bg-gray-800 fixed w-full z-10">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
               <div class="flex items-center">
@@ -9,19 +9,13 @@
                       <img class="h-8 w-8" src="./assets/dharma-logo.png" alt="Dharma Inquiry">
                   </router-link>
                 </div>
-                <div class="hidden md:block">
+                <div class="block md:block">
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <router-link to="/"
                       :class="currentPage === '/' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'"
                       class="px-3 py-2 rounded-md text-sm font-medium">
-                      Inquiry
-                    </router-link>
-      
-                    <router-link to="/guidance"
-                      :class="currentPage.includes('guidance') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'"
-                      class="px-3 py-2 rounded-md text-sm font-medium">
-                      Guidance
+                      Play
                     </router-link>
       
                     <router-link to="/about"
@@ -33,7 +27,7 @@
                 </div>
               </div>
      
-              <div class="-mr-2 flex md:hidden">
+              <div class="-mr-2 flex hidden md:hidden">
                 <!-- Mobile menu button -->
                 <button @click="navOpen = !navOpen" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                   <span class="sr-only">Open main menu</span>
@@ -68,11 +62,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <router-link to="/"
                 :class="currentPage === '/' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'"
-                class="block px-3 py-2 rounded-md text-base font-medium">Inquiry</router-link>
-
-              <router-link to="/guidance"
-                :class="currentPage.includes('guidance') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'"
-                class="block px-3 py-2 rounded-md text-base font-medium">Guidance</router-link>
+                class="block px-3 py-2 rounded-md text-base font-medium">Play</router-link>
 
               <router-link to="/about"
                 :class="currentPage.includes('about') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'"
@@ -81,14 +71,14 @@
           </div>
         </nav>
       
-        <header class="bg-white shadow">
+        <!-- <header class="bg-white shadow">
           <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <h1 class="text-3xl font-bold leading-tight text-gray-900">
-              Dharma Inquiry
+              ConvoKindling: Spark conversations
             </h1>
           </div>
-        </header>
-        <main>
+        </header> -->
+        <main class="pt-16">
           <router-view />
         </main>
       </div>
