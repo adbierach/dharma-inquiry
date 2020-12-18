@@ -125,9 +125,9 @@ export default {
 }
 
 
-.flip2 { animation: flip2 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip4 { animation: flip4 18s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 
 @keyframes flip2 {
     0% { margin-top: -180px; }
